@@ -1,6 +1,19 @@
 public class Pedido {
-    public Cliente cliente;
+    /**
+     * Paso a método privado y paso a la línea siguiente "this.cliente=cliente;", me parece más correcto y legible
+     */
+    private Cliente cliente;
     public Pedido(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    /**
+     * Realizo el encapsulamiento con get y set
+     */
+    public Cliente getCliente() {
+        return cliente;
+    }
+    public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
 
